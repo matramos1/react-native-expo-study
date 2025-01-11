@@ -1,7 +1,8 @@
 import { Stack } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import "react-native-reanimated";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -23,9 +24,12 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack>
-      <Stack.Screen name="(NoSessionApp)" options={{ headerShown: false }} />
-      <Stack.Screen name="(SessionApp)" />
-    </Stack>
+    <>
+      <Stack>
+        <Stack.Screen name="(NoSessionApp)" options={{ headerShown: false }} />
+        <Stack.Screen name="(SessionApp)" />
+      </Stack>
+      <StatusBar style="light" />
+    </>
   );
 }

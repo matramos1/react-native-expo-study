@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "viva-mais",
+    "name": "Viva Mais",
     "slug": "viva-mais",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,6 +22,15 @@
         {
           "image": "./assets/images/splash.png",
           "resizeMode": "cover"
+        }
+      ],
+      [
+        "expo-asset",
+        {
+          "assets": [
+            "./assets/images/welcome-bg.png",
+            "./assets/images/viva-mais-logo.png"
+          ]
         }
       ]
     ],
